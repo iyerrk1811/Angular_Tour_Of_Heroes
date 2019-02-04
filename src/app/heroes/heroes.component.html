@@ -7,18 +7,9 @@
   </li>
 </ul>
 
+<!-- adding hero detail component via hero detail tag -->
+<app-hero-detail [hero]="selectedHero">
+
+</app-hero-detail>
 
 
-
-<div *ngIf="selectedHero">
-  <h2>{{selectedHero.name | uppercase}} Details</h2>
-  <div><span>id: {{selectedHero.id}}</span></div>
-  <div><span>name: {{selectedHero.name}}</span></div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedHero.name" placeholder="name">
-      <!-- Rough work for 1 way data binding
-        <input placeholder="name" [name]="hero.name" (name)="setName()"> -->
-    </label>
-  </div>
-</div>
